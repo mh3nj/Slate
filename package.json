@@ -1,0 +1,61 @@
+{
+  "name": "slate-theme-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Design, preview and export Telegram themes for mobile (.attheme) and desktop (.tdesktop-theme) in one studio.",
+  "author": "mh3nj",
+  "license": "MIT",
+  "keywords": [
+    "telegram",
+    "themes",
+    "theme-studio",
+    "attheme",
+    "tdesktop-theme",
+    "react",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mh3nj/slate.git"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "lucide-react": "^0.469.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "lint": "eslint src",
+    "release": "node scripts/release.mjs",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1"
+  }
+}

@@ -1,0 +1,401 @@
+/* ============================================================================
+   Slate — preview frame structure
+   Structural layout only; every color is applied inline from the live palette
+   so the previews re-render instantly as the theme changes.
+   ============================================================================ */
+
+/* ---- Phone frame ---- */
+
+.tg-mobile-frame {
+  width: 300px;
+  flex: 0 0 auto;
+  border-radius: 40px;
+  padding: 12px;
+  background: #05060a;
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  position: relative;
+}
+
+.tg-mobile-screen {
+  width: 100%;
+  height: 610px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, 'SF Pro Text', Roboto, sans-serif;
+}
+
+.tg-notch {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 22px;
+  background: #05060a;
+  border-radius: 14px;
+  z-index: 5;
+}
+
+.tg-mheader {
+  height: 54px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 12px 6px;
+}
+
+.tg-mavatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  flex: 0 0 auto;
+}
+
+.tg-mheader-name {
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.tg-mheader-status {
+  font-size: 11.5px;
+  margin-top: 1px;
+}
+
+.tg-mheader-icons {
+  margin-left: auto;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.tg-mbody {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 10px 10px 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  background-size: cover;
+  background-position: center;
+}
+
+.tg-service-pill {
+  align-self: center;
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 10px;
+  margin: 6px 0 10px;
+}
+
+.tg-bubble-row {
+  display: flex;
+  margin-bottom: 2px;
+}
+
+.tg-bubble {
+  max-width: 74%;
+  padding: 6px 9px 7px;
+  border-radius: 14px;
+  font-size: 13px;
+  line-height: 1.35;
+  position: relative;
+}
+
+.tg-bubble.in {
+  border-bottom-left-radius: 3px;
+}
+
+.tg-bubble.out {
+  border-bottom-right-radius: 3px;
+}
+
+.tg-bubble-time {
+  font-size: 9.5px;
+  float: right;
+  margin: 3px -2px -2px 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  opacity: 0.9;
+}
+
+.tg-bubble-reply {
+  border-left: 2.5px solid;
+  padding-left: 6px;
+  margin-bottom: 3px;
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+.tg-bubble-reply b {
+  display: block;
+  font-size: 11px;
+}
+
+.tg-voice-bubble {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border-radius: 14px;
+  max-width: 74%;
+}
+
+.tg-voice-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tg-waveform {
+  display: flex;
+  align-items: center;
+  gap: 1.5px;
+  height: 20px;
+  flex: 1 1 auto;
+}
+
+.tg-waveform span {
+  width: 2px;
+  border-radius: 1px;
+}
+
+.tg-minput {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px 14px;
+}
+
+.tg-minput-field {
+  flex: 1 1 auto;
+  height: 34px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  font-size: 12.5px;
+}
+
+.tg-minput-icon-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+/* ---- Desktop window ---- */
+
+.tg-desktop-frame {
+  width: 660px;
+  flex: 0 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  display: flex;
+  flex-direction: column;
+  height: 480px;
+}
+
+.tg-dtitlebar {
+  height: 32px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.tg-dtitlebar .dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.tg-dbody {
+  flex: 1 1 auto;
+  display: flex;
+  min-height: 0;
+}
+
+.tg-dlist {
+  width: 232px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid;
+  min-height: 0;
+}
+
+.tg-dlist-search {
+  margin: 10px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 11.5px;
+  flex: 0 0 auto;
+}
+
+.tg-dlist-scroll {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 2px 6px;
+}
+
+.tg-dchat-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 1px;
+  cursor: default;
+}
+
+.tg-dchat-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  flex: 0 0 auto;
+}
+
+.tg-dchat-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.tg-dchat-row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.tg-dchat-name {
+  font-size: 12.5px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tg-dchat-date {
+  font-size: 10px;
+  flex: 0 0 auto;
+}
+
+.tg-dchat-row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.tg-dchat-msg {
+  font-size: 11.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tg-dchat-badge {
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 9px;
+  min-width: 17px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  flex: 0 0 auto;
+}
+
+.tg-dmain {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+
+.tg-dheader {
+  height: 52px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 16px;
+  border-bottom: 1px solid;
+}
+
+.tg-dheader-name {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.tg-dheader-status {
+  font-size: 11px;
+}
+
+.tg-dchat-body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  background-size: cover;
+  background-position: center;
+}
+
+.tg-dcompose {
+  flex: 0 0 auto;
+  padding: 10px 14px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tg-dcompose-field {
+  flex: 1 1 auto;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  font-size: 12px;
+}
+
+/* ---- Responsive frames ----
+   Frames are scaled to fit narrow screens by App.tsx (transform + reserved
+   slot size), so no width overrides are needed here. */

@@ -1,0 +1,17 @@
+{
+  "short_name": "Slate",
+  "name": "Slate: Telegram Theme Studio",
+  "description": "Design, preview and export Telegram themes in one place.",
+  "icons": [
+    {
+      "src": "logo-solo-dark-theme.png",
+      "type": "image/png",
+      "sizes": "any",
+      "purpose": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0a0c11",
+  "background_color": "#0a0c11"
+}

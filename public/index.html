@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/jpeg" href="/favicon-dark-theme.jpg" />
+    <script>
+      // Show the tab icon that matches the OS color scheme before first paint,
+      // and switch it live when the scheme changes. Works in every browser.
+      (function () {
+        var mq = window.matchMedia('(prefers-color-scheme: dark)');
+        var applyIcon = function () {
+          var link = document.querySelector("link[rel='icon']");
+          if (link) {
+            link.href = mq.matches ? '/favicon-dark-theme.jpg' : '/favicon-light-theme.jpg';
+          }
+        };
+        applyIcon();
+        if (mq.addEventListener) mq.addEventListener('change', applyIcon);
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0c11" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f3f1ec" media="(prefers-color-scheme: light)" />
+    <meta
+      name="description"
+      content="Slate: design, preview and export Telegram themes (mobile .attheme & desktop .tdesktop-theme) in one place."
+    />
+    <link rel="apple-touch-icon" href="/logo-solo-dark-theme.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Slate: Telegram Theme Studio</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
