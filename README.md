@@ -1,6 +1,6 @@
 <div align="center">
 
-# Slate — Telegram Theme Studio
+# Slate: Telegram Theme Studio
 
 **Design, preview and export Telegram themes — for mobile *and* desktop — in one place.**
 
@@ -44,6 +44,12 @@ the screenshot capture are all hand-rolled with **zero runtime dependencies**.
 - **High-res screenshots** — export the preview as a crisp 3× PNG straight
   from the stage toolbar (or export just the wallpaper image).
 
+## Demo
+
+[Slate-demo.webm](https://github.com/user-attachments/assets/c0fb656a-e6be-4838-84cb-0b549191c8f6)
+
+
+
 ## Screenshots
 
 | Mobile preview (dark) | Desktop preview (light) |
@@ -57,6 +63,7 @@ the screenshot capture are all hand-rolled with **zero runtime dependencies**.
 | Export panel | Theme library |
 | --- | --- |
 | ![Export panel](docs/screenshots/export-panel.webp) | ![Theme library](docs/screenshots/library-panel.webp) |
+
 
 ## Quick start
 
